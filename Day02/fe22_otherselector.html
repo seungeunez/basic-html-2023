@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <title>반응 선택자</title>
+    <style>
+        input[type='text']:hover{
+            background-color: coral;
+        }
+        input[type='text']:focus{
+            background-color: gray; /*text의 경우엔 클릭하는 순간이 :focus 임*/
+        }
+        input[type='button']:hover {    /*:hover은 갖다대는 순간 */
+            background-color: coral;
+        }
+        input[type='button']:active{    /* :active는 클릭하는 순간*/
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="id"><br>
+    <input type="button" value="클릭">
+</body>
+</html>
