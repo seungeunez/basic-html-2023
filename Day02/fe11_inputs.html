@@ -2,11 +2,28 @@
 <html lang="ko">
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>입력양식 태그</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>입력양식 태그</title>    <!--현재는 head태그 내에 많은게 필요하지 않음-->
 </head>
 <body>
+
+    <!--반드시 form태그 내 입력양식을 넣어야 jsp나 spring 등으로 데이터를 보낼 수 있음-->
+
+    <!-- action="전송위치" - 데이터를 전달할 목적지 --> 
+    <!-- method="전송방식" - GET: 주소에 데이터를 직접 입력해 데이터 전달 / POST: 별도의 방법(숨겨서 백그라운드로 보낸다는 뜻)을 사용해 데이터를 해당 주소로 데이터 전달 -->
+    <!--여기서 주소란 URL을 말함-->
+
+    
+    <form action="./fe11_inputs.html" method="post">
+        아이디: <input type="text" name="id"><br>
+        암호: <input type="password" name="password"><br>
+        <input type="submit" value="로그인">
+        <input type="color" name="interior">
+        <input type="date"> <!--달력을 냅다 보여줌 datetime하면 안나옴 무조건 date로 해야 달력이 나옴-->
+    </form>
+
+    <!--method="get" 방식으로 전달했을 때 file:///C:/Source/basic-html-2023/Day02/fe11_inputs.html?id=a1&password=a1 주소 뒤에 아이디와 비밀번호가 전부 공개됨-->
+    <!--method="post" 방식으로 전달했을 땐 file:///C:/Source/basic-html-2023/Day02/fe11_inputs.html 주소에 아이디 암호가 안보인다-->
+
     
 </body>
 </html>
