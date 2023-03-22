@@ -6,6 +6,7 @@
 </head>
 <body>
     <form action="" method="get" >
+        
         <!--사용자 입력양식-->
         <input type="text" name="text" value="text"><br>
         <input type="password" name="pass" value="12345"><br>
@@ -14,7 +15,8 @@
         <input type="checkbox" name="fruits" value="바나나"> 바나나
         <input type="checkbox" name="fruits" value="복숭아"> 복숭아<br>
         <input type="radio" name="gender" value="남자"> 남자
-        <input type="radio" name="gender" value="여자"> 여자<br>    <!-- name 값이 통일 되면 radio는 하나만 선택이 가능하다 -->
+        <input type="radio" name="gender" value="여자"> 여자<br> 
+        <!-- name 속성 값이 통일 되면 radio는 여러 항목 중 하나만 선택이 가능하다 -->   
         
         <!--히든양식-->
         <input type="hidden" name="code" value="TH1234">
@@ -27,8 +29,8 @@
         <!--input image 클릭 이미지의 x, y값 전달 -->
         <input type="image" src="http://placehold.it/100x100">  
         <br>
-        <!--얘는 x, y값이 안나옴-->
-        <img src="http://placehold.it/200x100"> 
+        <!--얘는 클릭시 x, y값이 안나옴-->
+        <img src="http://placehold.it/100x100"> 
 
     </form>
 </body>

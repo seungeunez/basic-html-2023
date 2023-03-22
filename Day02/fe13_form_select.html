@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>콤보박스</title>
+</head>
+<body>
+    <form method="get">
+        <select name="snack">
+            <option value="">--선택--</option>
+            <option value="kimbab">김밥</option>
+            <option value="soondae">순대</option>
+            <option value="fishball">어묵</option>
+            <option value="colpop">콜팝</option>
+            <option value="dduboki">떡볶이</option>
+            <option value="sweet chicken">닭강정</option>
+            <option value="slushy">슬러쉬</option>
+            <option value="fried seaweed roll">김말이 튀김</option>
+            <option value="fried squid">오징어 튀김</option>
+            <option value="tornado potato">회오리 감자</option>
+        </select>
+
+        <select name="media">
+            <optgroup label="HTML5"> <!--어떤 그룹에 속한다고 표시만 해주는 거임 다른 기능이 있는거 아님-->
+                <option value="mt">Multimedia Tag</option>
+                <option value="con">Connectivity</option>
+                <option value="da">Devic Access</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option value="an">Animation</option>
+                <option value="3D">3D Transfrom</option>
+            </optgroup>
+        </select><br>
+        <input type="email" name="email"><br>   <!--email형식에 안맞게 쓰면 알려줌--> <!--@는 %40으로 보여줌-->
+        <input type="submit" value="제출">
+
+    </form>
+    
+</body>
+</html>
