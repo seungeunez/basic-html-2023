@@ -3,17 +3,34 @@
 <head>
     <meta charset='utf-8'>
     <title>자손/후손 선택자</title>
+    <style>
+        /* #header h1{  => id가 header인 h1은 전부 포함
+            color: violet;
+        } */
+
+        /* #header h1, h2{ color: violet;} 후손 선택자 : 자손, 후손 전부 바뀜 */
+        #header > h1 {color: crimson;} /*자손선택자 : 자손만 바뀜 후손은 안바뀜*/
+        #section > p {color: teal;}
+        #header > #nav > h1 {color: fuchsia;}
+
+
+    </style>
 </head>
 <body>
     <div id="header">
         <h1 class="title">Lorem ipsum</h1>
         <div id="nav">
             <h1>Navigation</h1>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius amet, temporibus ipsum voluptatum laboriosam debitis, exercitationem praesentium delectus inventore magnam animi totam nisi natus ea? Ea soluta obcaecati nemo incidunt.</p>
+                <h1>sub Title</h1>
+            </div>
+            <h2>작은 제목</h2>
         </div>
     </div>
     <div id="section">
         <h1 class="title">Lorem ipsum</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, ab possimus laboriosam necessitatibus totam quo accusamus cumque laudantium quaerat, consectetur odio ipsum excepturi maxime, dolorum minus nobis veritatis adipisci?</p>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, ab possimus laboriosam necessitatibus totam quo accusamus cumque laudantium quaerat, consectetur odio ipsum excepturi maxime, dolorum minus nobis veritatis adipisci?</p>
     </div>
 </body>
 </html>
