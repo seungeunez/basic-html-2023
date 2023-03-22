@@ -2,14 +2,38 @@
 <html lang="ko">
 <head>
     <meta charset='utf-8'>
-    <title>ID 선택자</title> 
+    <title>ID/클래스 선택자</title> 
     <style>
-        *{                           /* *은 all이다 */
+        /* *{                           // *은 all이다 
             margin: 0; padding: 0;
-        }
+        } */
 
         #header{
-            width: 800px; margin: 0 auto; background-color: red;    /*auto로 하니 중앙에 위치*/
+            width: 1024px; margin: 0px auto; background-color: red;    /*auto로 하니 중앙에 위치*/
+            padding: 5px;
+        }
+
+        #wrap{
+            width: 1024px; margin: 0px auto; overflow: hidden;
+
+        }
+
+        #aside{
+            width: 190px; float: right; background-color: blue;  /*float 띄우는 거*/
+            padding: 5px;
+        }
+
+        #content{
+            width: 814px; float: left;
+            background-color: #00ff00;
+            padding: 5px;
+        }
+
+        .summer{    /*클래스는 .클래스명으로 해주면 된다*/
+            color: aqua;
+        }
+        .spring{
+            color: orangered;
         }
 
     </style>
@@ -19,13 +43,24 @@
         <h1>#header 영역</h1>
     </div>
     <div id="wrap">
-        <div id="asdie">
+        <div id="aside">
             <h2>#aside 영역</h2>
         </div>
         <div id="content">
             <h2>#content 영역</h2>
         </div>
     </div>
+
+
+    <div>
+        <ul>
+            <li class="spring">딸기</li>
+            <li class="summer">망고</li>
+            <li>바나나</li>
+            <li class="summer">수박</li>
+        </ul>
+    </div>
+
 
 </body>
 </html>
