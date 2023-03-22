@@ -2,9 +2,30 @@
 <html lang="ko">
 <head>
     <meta charset='utf-8'>
-    <title>Page Title</title> 
+    <title>ID 선택자</title> 
+    <style>
+        *{                           /* *은 all이다 */
+            margin: 0; padding: 0;
+        }
+
+        #header{
+            width: 800px; margin: 0 auto; background-color: red;    /*auto로 하니 중앙에 위치*/
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div id="header">
+        <h1>#header 영역</h1>
+    </div>
+    <div id="wrap">
+        <div id="asdie">
+            <h2>#aside 영역</h2>
+        </div>
+        <div id="content">
+            <h2>#content 영역</h2>
+        </div>
+    </div>
+
 </body>
 </html>
