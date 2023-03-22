@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    
     <meta charset='utf-8'>
     <title>구조 선택자(메뉴)</title>
     <style>
@@ -8,7 +9,7 @@
             overflow: hidden;
         }
         li{
-            list-style: none;   /* 맨 앞 점을 없애줌 */
+            list-style: none;   /* 맨 앞에 있는 점을 없애줌 */
             float: left;    /* 세로로 있던게 가로로 나열됨 */
             padding: 10px;
         }
@@ -30,9 +31,33 @@
             color: whitesmoke;  
         }
 
+        #first{
+            background-color: rgb(255, 0, 0);
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
+        #second{
+            background-color: rgb(0, 0, 255);
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
+        #third{
+            background-color: rgb(248, 244, 4);
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
     </style>
+
 </head>
+
 <body>
+
     <ul>
         <li>Home</li>
         <li>About</li>
@@ -42,5 +67,11 @@
         <li>Board</li>
         <li>Contact</li>
     </ul>
+
+    <div id="first"></div>  <!--span으로 하니깐 무조건 글도 써야했고 영역이 너무 작았음 span 사용 ㄴㄴ-->
+    <div id="second"></div>
+    <div id="third"></div>
+    <input type="color">
+
 </body>
 </html>
