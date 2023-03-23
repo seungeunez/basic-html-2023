@@ -31,4 +31,5 @@ Java 개발자 과정 프론트앤드 리포지토리
     - 반응형 웹
 
 3일차 레이아웃
+
 <img src="https://user-images.githubusercontent.com/101508116/227146221-5e2463f3-233c-4d57-ab80-eb1a892e0274.png" width="600">
