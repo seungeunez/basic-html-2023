@@ -6,9 +6,12 @@
     <title>그리드 레이아웃2</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
+
         #wrap{
             width: 800px;
             display: grid;
+            grid-template-columns: repeat(3, 1fr); /*1fr을 3번 반복*/
+            grid-template-rows: repeat(3,100px);
         }
 
         .box{
@@ -17,6 +20,19 @@
             font-weight: bold;
             text-align: center;
         }
+        .box1{
+            background-color: #3689ff;
+        }
+        .box2{
+            background-color: #00cf12;
+        }
+        .box3{
+            background-color: #ff9019;
+        }
+        .box4{
+            background-color: #ffd000;
+        }
+
     </style>
 </head>
 <body>
