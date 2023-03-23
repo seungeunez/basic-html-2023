@@ -4,6 +4,12 @@
     <meta charset='utf-8'>
     <title>버튼 만들기</title>
     <style>
+
+
+        .font_big {font-size: 25px;}
+        .font_bold{font-weight: bold;}
+        .font_center{text-align: center;}
+        
         .button{
             width: 200px;
             height: 60px;
@@ -14,11 +20,17 @@
             border-radius: 40px;
             box-shadow: 5px 5px 5px #A9A9A9; 
         }
+
+        .button > a{
+            display: block;
+            line-height: 60px; /*버튼 사이즈 높이만큼 지정해야 글씨가 중앙에 옴*/
+            text-decoration-line: none; /*글씨 밑줄 사라짐*/
+        }
     </style>
 </head>
 <body>
     <div class="button">
-        <a href="https://www.google.com" target="_blank">구글</a>
+        <a href="https://www.google.com" target="_blank" class="font_big font_bold font_center">구글</a>
     </div>
 </body>
 </html>

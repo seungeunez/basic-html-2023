@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <title>CSS 위치 속성</title>
+    <style>
+        body > div {
+            width: 200px; height: 120px;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden; /* 영역을 벗어나면 어떻게 할 것인지? 잘라버림(숨김) - hidden  overflow scroll 쓰지 말자 최악이래*/
+        }
+        .box{
+            width: 100px; height: 100px;
+            position: absolute;
+        }
+
+        .box:nth-child(1) {
+            background-color:  red;
+            left: 10px; top: 10px;
+            z-index: 900;   /*위치*/
+        }
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px; top: 50px;
+            z-index: 90; /*위치*/
+        }
+        .box:nth-child(3) {
+            background-color:  blue;
+            left: 90px; top: 90px;
+            z-index: 10; /*위치*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit</h1>
+    <div>   <!--div를 한 번더 감싸줘야 박스가 다 나옴 아니면 h1태그에 잘려서 나옴-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit</h1>
+</body>
+</html>
