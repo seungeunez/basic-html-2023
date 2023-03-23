@@ -8,7 +8,7 @@
             width: 200px; height: 120px;
             border: 2px solid black;
             position: relative;
-            overflow: hidden; /* 영역을 벗어나면 어떻게 할 것인지? 잘라버림(숨김) - hidden  overflow scroll 쓰지 말자 최악이래*/
+            overflow: hidden; /* 영역을 벗어나면 어떻게 할 것인지? 잘라버림(숨김) - hidden / 그림에 overflow scroll 쓰지 말자 최악이래*/
         }
         .box{
             width: 100px; height: 100px;
@@ -18,7 +18,7 @@
         .box:nth-child(1) {
             background-color:  red;
             left: 10px; top: 10px;
-            z-index: 900;   /*위치*/
+            z-index: 900;  /*위치 어떤 박스가 위에 존재할지 */
         }
         .box:nth-child(2) {
             background-color: green;

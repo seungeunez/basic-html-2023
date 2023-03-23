@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <title>중앙배치</title>
+    <style>
+        *{ margin: 0px; padding: 0px; }
+
+        body{ background-color: wheat; }
+
+        #container{
+            width: 500px; height: 250px;
+            background-color: darkorange;
+
+            position: absolute;
+            left: 50%; top: 50%;
+
+            /*중앙배치*/
+            margin-left: -250px;    /*widht의 반*/
+            margin-top: -125px;     /*height의 반*/
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+    </div>
+</body>
+</html>
