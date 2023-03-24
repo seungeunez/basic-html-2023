@@ -8,7 +8,7 @@
 
     <!-- https://releases.jquery.com/ 링크에서 jQuery 3.x minified 코드 갖고왔음 -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    
+
     <script>
         $(document).ready(function () {
             $('#box').css({
@@ -17,6 +17,7 @@
                 'background-color': 'orange'
             }).on('click', function() {
                 $(this).css('background-color', 'red');
+                alert('안녕? 난 메리야. 너희집으로 가고 있어. 나랑 같이 놀래?');
             }).on('mouseenter',function(){
                 $(this).css('background-color', 'blue');
                 $(this).css('border-radius', '50%');
@@ -24,10 +25,36 @@
                 $(this).css('background-color', 'orange');
                 $(this).css('border-radius', '0px');
             });
+
+            // $('h1').hover(function() {
+            //     $(this).css({'background-color':'red', 
+            //                 'color':'white'
+            //     });
+            //     // $(this).css('color','white'); 내부에 쓰는거나 밖에 쓰는거나 동일함 한번에 쓰겠냐 아니냐로 나뉘는거임
+            // }, function(){
+            //     $(this).css({'background-color':'', 
+            //                 'color':''
+            //     });
+            // });
+
+            //밑 위 코드 똑같음 편한걸로 쓰면 됨
+            $('h1').on('mouseenter', function() {
+                $(this).css({'background-color':'red', 
+                            'color':'white'
+                });
+                // $(this).css('color','white'); 내부에 쓰는거나 밖에 쓰는거나 동일함 한번에 쓰겠냐 아니냐로 나뉘는거임
+            }).on('mouseleave', function(){
+                $(this).css({
+                    'background-color':'', 
+                    'color':''
+                });
+            });
         });
     </script>
 </head>
 <body>
     <div id="box"></div>
+    <br>
+    <h1>CLICK</h1>
 </body>
 </html>
