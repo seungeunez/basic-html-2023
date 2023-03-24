@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>익명함수 & 일반함수</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        // var fnc = function() {  // fnc() 했을 때 이부분 무시됐음
+        //     alert('fncA');
+        // }
+        // var fnc = function() {
+        //     alert('fncB');
+        // }
+
+        // fnc();
+
+        var fnc = function() { alert('fncA');};
+        function fnc() {alert('fncB');};    // fnc() 했을 때 이부분 무시됐음
+
+        fnc();
+
+        //익명함수가 일반함수보다 우선순위가 더 높다
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
