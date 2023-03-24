@@ -6,12 +6,27 @@
     <title>이벤트</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script>
-        function func() {
-            alert('더블클릭');
-        }
+
+        //이벤트 매개변수 사용. event.type 종류 확인
+        window.onload = function(event){
+            alert(event.type); //load
+
+            var btnSave = document.getElementById('btnSave');
+
+            btnSave.onclick = function(e){
+                alert(e.event); //click
+            }
+        };
+
+        //javascript 특징은 쉽다. 변수 선언이 var하나로 다 됨
+        // java와 조건문, 반복문 동일
+        // DOM으로 HTML 태그를 전부 컨트롤
+        // function() 익명함수 형태의 함수선언이 일반적
+
     </script>
 </head>
 <body>
-    <button ondblclick="func();">더블클릭</button>   <!--더블클릭시 alert 실행-->
+    <!-- <button ondblclick="alert('더블클릭')">더블클릭</button> --> <!--더블클릭시 alert 실행-->
+    <button id="btnSave">클릭</button>   
 </body>
 </html>

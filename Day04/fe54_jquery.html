@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <script src='script/jquery-3.6.4.min.js'></script> -->
+
+    <!-- uncompressed 방식으로 다운로드 받는 방법 (이 코드만 여기에 적어두면 된다.)-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script>
+        /*자바스크립트 방식과 JQuery 방식과 결과는 똑같다*/
+
+        /*자바스크립트 전통 이벤트*/
+        // window.onload = function(){
+        //     alert('Hello! JavaScript');
+        // };
+
+        /*JQuery 방식 이벤트*/
+        $(document).ready(function() {
+            // alert('Hello! JQuery');
+            $('h1').css('background-color','black');
+            $('h1').css('color','white');
+            //fe50_dom.html 소스와 비교해보면 훨씬 소스가 간결하고 쓰기도 편하다
+
+            // var src = $('script').attr('src');
+            alert($('script').attr('src')); // script/jquery-3.6.4.min.js 출력
+            alert($('meta').attr('charset')); //utf-8 출력
+            alert($('script').attr('integrity')); // sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E= 출력
+            
+
+        });
+
+        
+
+    </script>
+</head>
+<body>
+    <h1>JQuery</h1>
+    <h1>JQuery</h1>
+    <h1>JQuery</h1>
+</body>
+</html>
+
+
+

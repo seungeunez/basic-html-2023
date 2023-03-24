@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- https://releases.jquery.com/ 링크에서 jQuery 3.x minified 코드 갖고왔음 -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('#box').css({
+                width: '100px',
+                height: '100px',
+                'background-color': 'orange'
+            }).on('click', function() {
+                $(this).css('background-color', 'red');
+            }).on('mouseenter',function(){
+                $(this).css('background-color', 'blue');
+                $(this).css('border-radius', '50%');
+            }).on('mouseleave', function() {
+                $(this).css('background-color', 'orange');
+                $(this).css('border-radius', '0px');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
