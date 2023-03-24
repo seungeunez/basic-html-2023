@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+
+        //window.onload를 쓰면 굳이 body태그내에 안써도 된다
+        //페이지가 렌더링이 완료되고 나면 window.onload 실행 (window.onload는 매애애앤 마지막에 실행됨) 
+        // body-스크립트태그 내에 스타일 코드가 있어도 window.load가 맨 마지막에 실행되니깐 body태그내 script는 적용이 안된다)
+        window.onload=function() {
+
+         // script의 style 변경은 body태그 마지막에 위치해야한다.
+        document.querySelector('h1').style.backgroundColor = 'red';
+        document.querySelector('h1').style.color = 'white';
+        document.querySelector('h1').style.fontSize= '50px';
+        document.querySelector('h1').style.fontStyle = 'Italic';
+
+
+        // 중복된 코드를 변수로 만들어버림
+        // var h1Style =  document.querySelector('h1').style;
+        // h1Style.backgroundColor = 'blue';
+
+
+        };
+        
+    </script>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+        <script>
+         // script의 style 변경은 body태그 마지막에 위치해야한다.
+        // document.querySelector('h1').style.backgroundColor = 'red';
+        // document.querySelector('h1').style.color = 'white';
+        // document.querySelector('h1').style.fontSize= '50px';
+        // document.querySelector('h1').style.fontStyle = 'Italic'; 
+
+
+        // 중복된 코드를 변수로 만들어버림
+        //
+        var h1Style =  document.querySelector('h1').style;
+        h1Style.backgroundColor = 'blue';   // 페이지 렌더링 때 같이 실행되는 부분임
+
+    </script>
+
+</body>
+</html>
