@@ -3,11 +3,61 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>그리드 레이아웃3</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+
+        #wrap{
+            width: 100%; /*100%하면 가로로 꽉 참*/
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4,100px);
+            grid-template-areas: 
+            "box1 box1 box1"
+            "box2 box3 box3"
+            "box2 box3 box3"
+            "box4 box4 box4";   /*미리 배열로 선언*/    /* 안쓰는 영역이 있으면 . 을 찍으면 됨 (각 영역에서 하나만 찍으면 안되는 듯? 최소 두 개 이상 찍어야 적용됨 아니면 이상해짐) */
+        }
+
+        .box{
+            padding: 38px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        .box1{
+            background-color: #3689ff;
+            /* grid-column: 1/4; */
+            grid-area: box1;
+        }
+        .box2{
+            background-color: #00cf12;
+            /* grid-row: 2/4; */
+            grid-area: box2;
+        }
+        .box3{
+            background-color: #ff9019;
+            /* grid-row: 2/4;
+            grid-column: 2/4; */
+            /* border: 10px solid rgb(0, 0, 0);  */
+            grid-area: box3;
+        }
+        .box4{
+            background-color: #ffd000;
+            /* grid-row: 4/5;
+            grid-column: 1/4; */
+            grid-area: box4;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div id="wrap">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
 </body>
 </html>
