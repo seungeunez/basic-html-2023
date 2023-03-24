@@ -49,12 +49,31 @@
                     'color':''
                 });
             });
+
+            $('a').click(function(e) {
+                alert('이동을 금지합니다');
+                e.preventDefault(); //이벤트를 제거
+            });
+
+            $('#btnToggle').click(function(){
+                $('.page').fadeToggle(500); // toggle(), fadeToggle(), slideToggle()
+            });
         });
     </script>
 </head>
-<body>
+
     <div id="box"></div>
     <br>
     <h1>CLICK</h1>
+    <br>
+    <a href="https://www.google.com" target="_blank">구글</a>
+
+    <input type="button" value="show" id="btnToggle">
+    <div class="page">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia facilis amet vero delectus quidem aut veniam sequi ipsum expedita itaque ea id labore, voluptatem reprehenderit nesciunt, cum ab! Ut, corrupti!</p>
+    </div>
+    
+    
 </body>
 </html>
