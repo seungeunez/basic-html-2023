@@ -9,6 +9,8 @@ Java 개발자 과정 프론트엔드 리포지토리
     - 웹 기본구조
     - HTML 5 기본태그
 
+<br>
+<br>
 
 1일차 학습내용
 
@@ -30,6 +32,9 @@ Java 개발자 과정 프론트엔드 리포지토리
     - HTML 레이아웃
     - 반응형 웹
 
+<br>
+<br>
+
 3일차 레이아웃
 
 <img src="https://user-images.githubusercontent.com/101508116/227146221-5e2463f3-233c-4d57-ab80-eb1a892e0274.png" width="600">
@@ -42,6 +47,9 @@ Java 개발자 과정 프론트엔드 리포지토리
     - 반응형 웹
     - Javascript 기초
     - JQuery
+
+<br>
+<br>
 
 4일차 그리드레이아웃 포토갤러리
 
