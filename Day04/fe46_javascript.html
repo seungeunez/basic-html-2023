@@ -17,6 +17,17 @@
 
         //출력
         alert(radius * radius * pi);
+
+        //현재 시간
+        var date = new Date();
+
+        //요소 추출
+        var year = date.getFullYear();
+        var month = date.getMonth() +1; //month는 무조건 +1을 해줘야함 
+        var day = date.getDate(); //getDay()는 요일임 date가 일임
+
+        alert(year  + '년' + month + '월' + day + '일');
+
     </script>
 </head>
 <body>
