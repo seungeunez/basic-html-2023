@@ -58,6 +58,18 @@
             $('#btnToggle').click(function(){
                 $('.page').fadeToggle(500); // toggle(), fadeToggle(), slideToggle()
             });
+
+            $('#anim').click(function(){
+                $('#box').animate({
+                    width: '300px',
+                    opacity: 0.2,
+                }, 1000); //1000 = 1초
+            }).dblclick(function(e){
+                $('#box').animate({
+                    width: '100px',
+                    opacity: 1.0,
+                }, 1000);
+            });
         });
     </script>
 </head>
@@ -67,6 +79,7 @@
     <h1>CLICK</h1>
     <br>
     <a href="https://www.google.com" target="_blank">구글</a>
+    <button id="anim">애니메이션</button>
 
     <input type="button" value="show" id="btnToggle">
     <div class="page">
