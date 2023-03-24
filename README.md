@@ -44,7 +44,7 @@ https://raw.gi
 
 4일차 그리드레이아웃 포토갤러리
 
-<img src-"https://user-images.githubusercontent.com/101508116/227399996-148431f4-e61f-4dc9-b3d1-8e50d98301d4.png" width="600">
+<img src="https://user-images.githubusercontent.com/101508116/227399996-148431f4-e61f-4dc9-b3d1-8e50d98301d4.png" width="600">
 
 
 <br>
