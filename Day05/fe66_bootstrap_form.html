@@ -12,21 +12,43 @@
             background-color: #EAE0FE;
             border: 1px solid #C5A9FC;
         }
+
+        .space{
+            margin-top: 20px;
+        }
     </style>
 
 </head>
 <body>
-    <div class="container">
+    <div class="container space">
         <div class="row">
             <div class="col-sm ">   <!--무조건 12칸 채워야함 -->
                 <form method="get">
-                    <div class="mb-3">
-                        <input type="email" id="mail">
+                    <div class="mb-2">
+                        <label for="mail" class="form-label">Email Address</label>
+                        <input type="email" id="mail" class="form-control" aria-describedby="mailhelp">
+                        <div id="mailhelp" class="form-text">이메일을 입력하세요.</div>
                     </div>
-                    <div class="mb-3">
-                        <input type="password" id="pass">
+
+                    <div class="form-floating mb-2">
+                        <input type="email" id="mail2" class="form-control" placeholder="test@mail.com">
+                        <label for="mail2">Email Address</label>    <!--label이 input 밑에 있으면 라벨이 상자 안에 존재하게 됨-->
                     </div>
-                    <input type="submit" value="로그인">
+
+                    <div class="mb-2">
+                        <label for="pass" class="form-label">Password</label>
+                        <input type="password" id="pass" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <label for="product" class="form-label">제조회사</label>
+                        <select id="product" class="form-select">
+                            <option selected>메뉴를 선택하세요</option>
+                            <option value="1">삼성전자</option>
+                            <option value="2">LG전자</option>
+                            <option value="3">SK하이닉스</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="로그인"  class="btn btn-sm btn-primary">
                 </form>
             </div>
         </div>
