@@ -11,7 +11,7 @@
     
     <!--3. BootStrap Icon용 CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="icon" href="https://getbootstrap.com//docs/5.3/assets/img/favicons/favicon.ico"> <!--사이트 탭 아이콘 바꿨음-->
+    <link rel="icon" href="https://getbootstrap.com//docs/5.3/assets/img/favicons/favicon.ico"> <!--사이트 탭 아이콘 변경-->
 </head>
 
 <body>
@@ -19,7 +19,18 @@
         <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button">
             <i class="bi bi-brightness-high-fill"></i>
         </button>
-            
+        <ul>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                    <i class="bi bi-brightness-high-fill"></i> Light
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                    <i class="bi bi-moon-stars-fill"></i> Dark
+                </button>
+            </li>
+        </ul>
     </div>
 
 
