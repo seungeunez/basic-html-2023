@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
         *{ margin: 0; padding: 0; }
+        .body{margin: 0 auto;}
         .card{
             background-color: black;
             margin: 5px;
@@ -16,6 +17,8 @@
 
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
+
+
     <script>
         //jQuery로 온로드 이벤트
         //$(document).ready(function (){});
@@ -23,12 +26,12 @@
             //card 객체 생성
             var makeCard = function() {
                 for(var i=0; i< 100; i++){
-                    $('<div></div>').addClass('.card').css({
-                        'width': '100px',
-                        'height': (Math.floor(Math.random() * 100) + 50)
+                    $('<div></div>').addClass('card').css({
+                        'width': 100,
+                        'height': (Math.floor(Math.random() * 100) + 50) 
                     }).appendTo('body');
-                }
-                $('body').masonry({columnWidht: 100});
+                };
+                $('body').masonry({columnWidth: 100});
             };
             makeCard();
         });
