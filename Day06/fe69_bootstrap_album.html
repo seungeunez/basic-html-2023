@@ -18,12 +18,20 @@
 
     <script>
         $(document).ready(function (){
+            $('btnLight').addClass('active');
+
+            $('img').css("border-radius","5px 5px 0 0");    //모든 이미지에 위쪽 테두리 둥근 모서리
+
             //테마변경
             $('#btnLight').click(function() {
                 $('html').attr('data-bs-theme', 'light');
+                $(this).addClass('active');
+                $('#btnDark').removeClass('active');
             });
             $('#btnDark').click(function() {
                 $('html').attr('data-bs-theme', 'dark');
+                $(this).addClass('active');
+                $('#btnLight').removeClass('active');
             });
         });
     </script>
@@ -38,7 +46,7 @@
         </button>
         <ul class="dropdown-menu">
             <li>
-                <button id="btnLight" type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                <button id="btnLight" type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="true">
                     <i class="bi bi-brightness-high-fill"></i>&nbsp; Light <!--&nbsp; 공백주는거임-->
                 </button>
             </li>
