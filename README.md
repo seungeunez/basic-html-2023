@@ -66,7 +66,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 - 프론트엔드 학습
     - Bootstrap Album example 클로닝 마무리
 
-<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/album_theme.png" width="600">
+<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/album_theme.png" width="700">
 
 
     - 포트폴리오 웹사이트 만들기
