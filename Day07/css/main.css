@@ -60,8 +60,7 @@ body {
     text-align: center;
     font-size: small;
     font-weight: bold;
-    z-index: 9999;
-    /*제일 앞에 두겠다는 뜻*/
+    z-index: 9999; /*제일 앞에 두겠다는 뜻*/
 }
 
 .outer-menu:hover {
@@ -91,7 +90,7 @@ body {
 #main-navigation {
     height: 30px;
     background-color: rgb(255, 255, 255);
-    /* border-top: 1px solid #cfcaca;  그었던 줄 없앰*/
+    /* border-top: 1px solid #cfcaca;  */ /*그었던 줄 없앰(주석처리로)*/
     /* box-shadow: 1px 3px 3px rgba(34, 25, 25, 0.5); */
 }
 
@@ -263,8 +262,7 @@ body {
 #darken-background {
     display: none;
     background-color: rgba(90, 90, 90, 0.7);
-    z-index: 10000;
-    /*맨 위로 올림*/
+    z-index: 10000; /*맨 위로 올림*/
     overflow-y: scroll;
 
     /* darken-background 영역 위치 변경 (그림 눌렀을 때 라이트박스 띄움. 원랜 맨 밑에 위치했었음)*/
@@ -290,8 +288,7 @@ body {
 .head-wrapper {
     width: 100%;
     position: fixed;
-    z-index: 9000;
-    /*10000보다 작으면 됨 라이트박스에서 10000을 줘서 라이트박스가 나올 땐 상단 바가 나오면 안되니깐*/
+    z-index: 9000; /*10000보다 작으면 됨. 라이트박스에서 10000을 줘서 라이트박스가 나올 땐 상단 바가 나오면 안되니깐*/
 
 }
 
