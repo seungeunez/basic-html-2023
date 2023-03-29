@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>핀터레스트 웹 클로닝</title>
+    <title>핀터레스트 웹 (클로닝)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <!--1. BootStrap용 CSS CDM 추가-->
@@ -37,13 +37,13 @@
 
         /*점 사라짐*/
         body {
-            background-color: snow;
+            background-color: rgb(255, 255, 255);
         }
 
         /*헤더영역 스타일*/
         #main-header {
             height: 40px;
-            background-color: #faf7f7;
+            background-color: rgb(255, 255, 255);
             position: relative;
         }
 
@@ -61,8 +61,8 @@
             position: absolute;
             width: 200px;
             height: 40px;
-            left: 50%;
-            margin-left: -100px;
+            left: 10px;
+            /* margin-left: -100px; */
             background-image: url('./images/logo.png');
             background-repeat: no-repeat;
             text-indent: -9999px;
@@ -109,12 +109,14 @@
         /*내비게이션 영역*/
         #main-navigation {
             height: 30px;
-            background-color: #faf7f7;
-            border-top: 1px solid #cfcaca;
-            box-shadow: 1px 3px 3px rgba(34, 25, 25, 0.5);
+            background-color: rgb(255, 255, 255);
+            /* border-top: 1px solid #cfcaca;  그었던 줄 없앰*/
+            /* box-shadow: 1px 3px 3px rgba(34, 25, 25, 0.5); */
         }
 
         #main-navigation>ul {
+            position: absolute;
+            margin-left: -10px;
             overflow: hidden;
             text-align: center;
         }
@@ -137,7 +139,8 @@
 
         .form {
 
-            position: relative;
+            position: absolute;
+            left: 290px;
         }
 
         .form .fa-search {
@@ -186,11 +189,14 @@
         .paper {
             width: 210px;
             margin: 10px 5px;
-            padding: 15px 15px 0;
+            /* padding: 15px 15px 0; */
             font-size: smaller;
             background-color: white;
             box-shadow: 0 1px 2px rgba(34, 25, 25, 0.5);
             border-radius: 10px;
+        }
+        .paper-img{
+            border-radius: 10px
         }
 
         .paper-description {
@@ -198,12 +204,15 @@
         }
 
         .paper-content {
-            margin: 0 -15px;
+            z-index: 1000;
+            position: absolute;
+            bottom: 2px; left: 5px;
+            /* margin: 0 -15px; */
             margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #f2f0f0;
-            overflow: hidden;
-            border-radius: 0 0 10px 10px;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+
         }
 
         .paper-link {
@@ -221,6 +230,7 @@
         #main-section {
             width: 920px;
             margin: 0 auto;
+            padding-top: 80px;
         }
 
         /* 한 줄에 2개 카드*/
@@ -275,12 +285,13 @@
             /* darken-background 영역 위치 변경 (그림 눌렀을 때 라이트박스 띄움. 원랜 맨 밑에 위치했었음)*/
             position: absolute;
             top: 0;
-            left: 0; right: 0;
+            left: 0;
+            right: 0;
             height: 100%;
-            
+
         }
 
-        #lightbox{
+        #lightbox {
             width: 700px;
             margin: 20px auto;
             padding: 15px;
@@ -290,7 +301,24 @@
             text-align: center;
         }
 
+
+        .head-wrapper{
+            width: 100%;    
+            position: fixed;
+            z-index: 9000;  /*10000보다 작으면 됨 라이트박스에서 10000을 줘서 라이트박스가 나올 땐 상단 바가 나오면 안되니깐*/
+
+        }
+
+        .profile-loc{
+            position: absolute;
+            top: 15px;
+            right: 30px;
+        }
+
+        
+
     </style>
+
 
     <!--jQuery 추가-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
@@ -319,25 +347,35 @@
             });
 
             //라이트박스 동작
-            function showLightBox(obj){ // 라이트박스 보이기
+            function showLightBox(obj) { // 라이트박스 보이기
+
+                //선택한 이미지 나옴
+                var img_src = obj.getElementsByTagName('img')[0].src;
+                $('#random-image').attr('src', img_src);
+
+                //라이트박스 보여짐
                 $('#darken-background').show();
                 $('#darken-background').css('top', $(window).scrollTop());
-                $('body').css('overflow','hidden'); // 넘치면 잘라버림
+                $('body').css('overflow', 'hidden'); // 넘치면 잘라버림
             }
 
-            function hideLightBox(){ //라이트박스 숨기기
+            function hideLightBox() { //라이트박스 숨기기
                 $('#darken-background').hide();
-                $('body').css('overflow','');   //원래상태로 돌아감
+                $('body').css('overflow', '');   //원래상태로 돌아감
             }
 
             //paper 클릭하면 라이트박스 나옴
-            $('.paper').click(function() {
-                showLightBox(this);
+            $('.paper').click(function () {
+                showLightBox(this); // this = .paper
             });
 
-            //
-            $('#darken-background').click (function() {
+            //클릭시 라이트박스 나옴
+            $('#darken-background').click(function () {
                 hideLightBox();
+            });
+
+            $('#lightbox').click(function (e) {  //e = event
+                e.stopPropagation(); // 클릭이벤트 하위 객체에 전달 금지 (라이트박스를 클릭했을 때 안닫히게 해줌)
             });
 
         });
@@ -347,65 +385,61 @@
 
 <body>
 
-    <!--헤더-->
-    <header id="main-header">
-        <div class="header-search-form">
-            <form class="form">
-                <i class="fa fa-search"></i>
-                <input type="text" class="form-control form-input" placeholder="Search anything...">
-                <span class="left-pan"><i class="fa fa-microphone"></i></span>
-            </form>
-        </div>
-        <h1 class="header-title">Pingterest</h1>
-        <div class="header-menu">
-            <ul class="outer-menu">
-                <li>
-                    <a href="#">정보</a>
-                    <ul class="inner-menu">
-                        <li><a href="#">데이터</a></li>
-                        <li><a href="#">데이터</a></li>
-                        <li><a href="#">데이터</a></li>
-                        <li><a href="#">데이터</a></li>
-                        <li><a href="#">데이터</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="outer-menu">
-                <li>
-                    <a href="#">프로필</a>
-                    <ul class="inner-menu">
-                        <li><a href="#">데이터</a></li>
-                        <li><a href="#">데이터</a></li>
-                        <li><a href="#">데이터</a></li>
-                        <li><a href="#">데이터</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="head-wrapper">
 
-    <!--내비게이션 영역-->
-    <nav id="main-navigation">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+        <!--헤더-->
+        <header id="main-header"> <!--아이디엔 공백 있으면 안 됨-->
+            <div class="header-search-form">
+                <form class="form">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control form-input" placeholder="Search anything...">
+                    <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                </form>
+            </div>
+            <h1 class="header-title">Pingterest</h1>
+
+        </header>
+
+        <!--내비게이션 영역-->
+        <nav id="main-navigation" class="shadow-sm">
+            <ul id="main-navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!--드롭다운 메뉴 영역-->
+            <div class="btn-group profile-loc">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">프로필</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">About me</a></li>
+                    <li><a class="dropdown-item" href="#">Security</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+
+
 
     <!--메인 섹션 영역-->
     <section id="main-section">
         <div class="paper">
             <div class="paper-holder">
-                <img width="180" src="https://picsum.photos/400/750">
+                <img width="210" src="https://picsum.photos/400/750" class="paper-img">
             </div>
-            <p class="paper-description">Lorem ipsum dolor sit amet.</p>
-            <div class="paper-content">
+            <!-- <p class="paper-description">Lorem ipsum dolor sit amet.</p> -->
+            <div class="paper-content align-middle">
                 <a class="paper-link" href="#">
                     <img src="images/profile.gif" width="30">
                 </a>
-                <p class="paper-text">About me...</p>
+                <p class="paper-text py-1">About me...</p>
             </div>
         </div>
         <!--paper 반복-->
