@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'NanumGothicsBold', sans-serif;
+}
+
+body{
+    background-color: #f9f9f9;
+    min-height: 100vh; /* vh = % */
+    overflow-x: hidden; /* x축 스크롤 금지 */
+}
+
+header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between; /* flex(grid-layout)로 꾸밀 때 가로정렬 */
+    align-items: center; /* 수직에서 중앙 정렬 */
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em; /* 기존 2배*/
+    color: #359381;
+    pointer-events: none; /*마우스 올렸을 때 아무런 이벤트를 안주겠단 얘기*/
+}
+
+.navigation a{
+    text-decoration-line: none; /*밑 줄 없앰*/
+    color: #359381;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 5px 15px 8px 15px;
+    border-radius: 20px;
+}
+
+.navigation a:hover, 
+.navigation a.active {
+    background-color: #359381;
+    color: #f9f9f9;
+}
