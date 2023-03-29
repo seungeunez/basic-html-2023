@@ -92,12 +92,13 @@ Java 개발자 과정 프론트엔드 리포지토리
 7일차 
 핀터레스트 클로닝
 
-<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio1.png" width="700">
+<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio1.png" width="700" />
 
+<br>
 
 Parallax Scrolling Web
 
-<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio2.png" width="700">
+<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio2.png" width="700" />
 
 
 
