@@ -1,11 +1,10 @@
-$(document).ready(function(){
-
-});
+//속도
 
 $(window).scroll(function(){
     let value =  window.scrollY;
 
     $('#text').css('margin-top',value*2.0 +'px');
+
     $('#leaf').css({
         'top' : value*-0.45+'px',
         'left' : value*1.2 + 'px'
