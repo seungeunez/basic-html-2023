@@ -24,6 +24,7 @@ Java 개발자 과정 프론트엔드 리포지토리
     - CSS 3 고급
 
 <br>
+<br>
 
 ## 3일차
 -  프론트엔드 학습
@@ -37,6 +38,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 
 <img src="https://user-images.githubusercontent.com/101508116/227146221-5e2463f3-233c-4d57-ab80-eb1a892e0274.png" width="600">
 
+<br>
 <br>
 
 ## 4일차
@@ -55,12 +57,16 @@ Java 개발자 과정 프론트엔드 리포지토리
 
 
 <br>
+<br>
 
 ## 5일차
 - 프론트엔드 학습
     - JS / JQuery 연동
     - Bootstrap 학습
     - Bootstrap Album example 클로닝
+
+<br>
+<br>
 
 ## 6일차
 - 프론트엔드 학습
@@ -74,7 +80,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 <img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/album_theme.png" width="700">
 
 <br>
-
+<br>
 
 ## 7일차
 - 프론트엔드 학습
@@ -90,7 +96,6 @@ Java 개발자 과정 프론트엔드 리포지토리
     - Single Page Templete
 
 <br>
-<br>
 
 7일차 
 핀터레스트 클로닝
@@ -104,6 +109,7 @@ Parallax Scrolling Web
 <img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio2.png" width="700" />
 
 
-
+<br>
+<br>
 
 ## 8일차
