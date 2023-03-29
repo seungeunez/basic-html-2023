@@ -271,6 +271,12 @@
             background-color: rgba(90, 90, 90, 0.7);
             z-index: 10000; /*맨 위로 올림*/
             overflow-y: scroll;
+
+            /* darken-background 영역 위치 변경 (그림 눌렀을 때 라이트박스 띄움. 원랜 맨 밑에 위치했었음)*/
+            position: absolute;
+            top: 0;
+            left: 0; right: 0;
+            height: 100%;
             
         }
 
@@ -324,9 +330,16 @@
                 $('body').css('overflow','');   //원래상태로 돌아감
             }
 
-            $('.paper').click(function(){
+            //paper 클릭하면 라이트박스 나옴
+            $('.paper').click(function() {
                 showLightBox(this);
             });
+
+            //
+            $('#darken-background').click (function() {
+                hideLightBox();
+            });
+
         });
     </script>
 
