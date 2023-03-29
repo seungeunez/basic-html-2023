@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+
     //풀다운메뉴 이벤트
     $('.outer-menu').hover(function () {
         $(this).find('.inner-menu').css('display', 'block');
@@ -7,9 +8,9 @@ $(document).ready(function () {
         $(this).find('.inner-menu').css('display', 'none');
     });
 
-    //masonry layout + imageload plugin //안겹치게끔
+    //masonry layout + imageload plugin //안겹치게끔 해주려고
     $('#main-section').imagesLoaded(function () {
-        $('#main-section').masonry({    //여기선 this하면 안 됨 하니깐 겹쳤음
+        $('#main-section').masonry({    //여기선 this하면 안 됨 하니깐 겹쳤음.
             itemSelector: '.paper',
             columnWidth: 220,
             isAnimated: true
