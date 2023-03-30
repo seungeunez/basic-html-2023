@@ -1,5 +1,6 @@
 //속도
 
+
 $(window).scroll(function(){
     let value =  window.scrollY;
 
@@ -27,3 +28,8 @@ $(window).scroll(function(){
     });
 
 });
+
+
+
+
+

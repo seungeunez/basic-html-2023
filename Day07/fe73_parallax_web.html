@@ -22,6 +22,29 @@
     <!--현재 페이지용 js 외부 링크-->
     <script src='script/parallax.js'></script>
 
+
+    <script>
+        //최초
+        $(document).ready(function(){
+            var image = document.getElementById('hill1');
+            $('.contents').css({
+                'position' : 'absolute',
+                'top' : image.height + 'px'
+            });
+        });
+
+        //브라우저 사이즈 바뀔때마다
+        $(window).resize(function(){
+            var image = document.getElementById('hill1');
+            console.log('${image.width} x ${image.height}');
+
+            $('.contents').css({
+                'position' : 'absolute',
+                'top' : image.height + 'px'
+            });
+        });
+    </script>
+
 </head>
 <body>
 
@@ -62,7 +85,7 @@
 
 
     <!--하단영역-->
-    <footer>
+    <!-- <footer>
         <nav>
             <a href="#">Blog</a>
             <span> | </span>
@@ -73,7 +96,8 @@
             <span>editor : Aerin Shin</span> <span>|</span>        
             <span>e-mail : arin980921@naver.com</span> <span>|</span>        
             <span>Copyright &copy; 2022. Codehal. All Rights Reserved.</span>
-        </p>
+        </p> -->
+
 
 
 
