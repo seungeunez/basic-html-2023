@@ -113,3 +113,6 @@ Parallax Scrolling Web
 <br>
 
 ## 8일차
+- 프론트엔드 학습
+    - Single Page Template
+    - SB Admin Page
