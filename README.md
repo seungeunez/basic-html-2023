@@ -118,4 +118,4 @@ Parallax Scrolling Web
     - SB Admin Page
 
 Grayscale Single Page Template
-<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio3.png" width="700" />
+<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio3.gif" width="700" />
