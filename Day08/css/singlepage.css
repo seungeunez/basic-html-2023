@@ -192,11 +192,17 @@ img{
 }
 
 .masterHead h1{
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 5rem;
+    line-height: 5rem;
     letter-spacing: 0.8rem;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.masterHead h2 {
+    max-width:  20rem;
+    font-size: 1rem;
 }
