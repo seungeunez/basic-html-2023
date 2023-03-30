@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* 구글폰트로 웹사이트 글자체 변경 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;500;600;700;900&display=swap'); 
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
