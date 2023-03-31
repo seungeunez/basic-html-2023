@@ -7,6 +7,9 @@
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
+html, body{
+    height: 100vh;
+}
 
 hr{
     margin: 1rem 0;
@@ -22,3 +25,43 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 500;
     line-height: 1.2;
 }
+
+p{
+    margin-top: 0;
+    margin-bottom: 1.0rem;
+}
+
+
+/*전체 레이아웃*/
+#layoutTotal{
+    display: flex;
+}
+
+#layoutTotal #layoutLeftSide{
+    flex-basis: 225px;
+    flex-shrink: 0;
+    transition: transform 0.15s ease-in-out;
+    z-index: 1000;
+    /* transform: translateX(-225px); /*화면 왼쪽으로 사라지게 하기 위함*/
+}
+
+#layoutTotal #layoutContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+    flex-grow: 1;
+    min-height: 100vh; /*calc(100vh - 56px)*/
+    /* margin-left: -225px; */
+}
+/*전체 레이아웃 끝*/
+
+/*왼쪽메뉴*/
+.sb-sidenav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+
