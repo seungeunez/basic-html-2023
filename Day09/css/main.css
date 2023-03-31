@@ -50,7 +50,7 @@ p{
     flex-shrink: 0;
     transition: transform 0.15s ease-in-out;
     z-index: 1000;
-    /* transform: translateX(-225px); /*화면 왼쪽으로 사라지게 하기 위함*/
+    /* transform: translateX(-225px); /*화면 왼쪽으로 사라지게 하기 위함 */
 }
 
 #layoutTotal #layoutContent{
@@ -69,7 +69,7 @@ p{
 .sb-topnav{
     padding-left: 0;
     height: 56px;
-    z-index: 1001; /*상단 고정*/
+    z-index: 1001; /*제일 위에*/
 }
 
 .sb-topnav .navbar-brand{
@@ -82,7 +82,7 @@ p{
 
 }
 
-/*왼쪽메뉴*/
+/* 왼쪽메뉴 */
 .sb-sidenav{
     display: flex;
     flex-direction: column;
