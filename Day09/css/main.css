@@ -31,6 +31,14 @@ p{
     margin-bottom: 1.0rem;
 }
 
+.sb-nav-fixed #layoutLeftSide .sb-topnav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
 
 /*전체 레이아웃*/
 #layoutTotal{
@@ -56,6 +64,23 @@ p{
     /* margin-left: -225px; */
 }
 /*전체 레이아웃 끝*/
+
+/*탑 메뉴*/
+.sb-topnav{
+    padding-left: 0;
+    height: 56px;
+    z-index: 1001; /*상단 고정*/
+}
+
+.sb-topnav .navbar-brand{
+    width: 225px;
+    margin: 0;
+}   
+
+.sb-topnav #sidebarToggle{
+    color: rgba(255, 255, 255, 0.5);
+
+}
 
 /*왼쪽메뉴*/
 .sb-sidenav{
