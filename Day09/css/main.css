@@ -39,6 +39,11 @@ p{
     z-index: 999;
 }
 
+.sb-nav-fixed #layoutTotal #layoutLeftSide{
+    width: 255px;
+    height: 100vh;
+    z-index: 1001; /*맨 위에 나오게하기 위함*/
+}
 
 /*전체 레이아웃*/
 #layoutTotal{
@@ -69,7 +74,7 @@ p{
 .sb-topnav{
     padding-left: 0;
     height: 56px;
-    z-index: 1001; /*제일 위에*/
+    z-index: 1001; /*제일 위에 나오게 하기 위함*/
 }
 
 .sb-topnav .navbar-brand{
@@ -90,3 +95,31 @@ p{
     flex-wrap: nowrap;
 }
 
+.sb-sidenav .sb-sidenav-menu{
+    flex-grow: 1;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav{
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .sb-sidenav-menu-heading{
+    padding: 1.75rem 1rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    /* text-transform: uppercase; /*소문자를 대문자로 변환*/
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .nav-link{
+    display: flex;
+    align-items: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: relative;
+}
+
+.sb-sidenav-dark{
+    background-color: #212529;
+    color: rgba(255, 255, 255, 0.5);
+}
