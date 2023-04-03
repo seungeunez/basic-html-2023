@@ -19,6 +19,10 @@ hr{
     opacity: 0.25;
 }
 
+label{
+    display: inline-block;
+}
+
 h1, h2, h3, h4, h5, h6{
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -57,6 +61,13 @@ p{
     z-index: 1000;
     /* transform: translateX(-225px); /*화면 왼쪽으로 사라지게 하기 위함 */
 }
+
+/*왼쪽 화면 고정*/
+/* #layoutLeftSide {
+    /*position: fixed;    
+    top: 56px;
+} */
+
 
 #layoutTotal #layoutContent{
     position: relative;
@@ -132,8 +143,12 @@ p{
 }
 
 .sb-sidenav .sb-sidenav-menu .nav .nav-link.collapsed .sb-sidenav-collapse-arrow{
-
     transform: rotate(-90deg); /* > 90도 돌아감*/
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .sb-sidenav-menu-nested{ 
+    margin-left: 1.5rem;    /* 정적 내비게이션, 라이트테마 들여쓰기 해줬음*/
+    flex-direction: column; 
 }
 
 .sb-sidenav .sb-sidenav-footer{
@@ -141,11 +156,75 @@ p{
     flex-shrink: 0;
 }
 
+/*왼쪽 메뉴 디자인*/
 .sb-sidenav-dark{
     background-color: #212529;
     color: rgba(255, 255, 255, 0.5);
 }
 
+.sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading{
+    color: rgba(255, 255, 255, 0.25); /*메인 인터페이스 글씨 색상*/
+}
+
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link{
+    color: rgba(255, 255, 255, 0.5); /*대시보드 레이아웃 페이지 글씨 색상*/
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link:hover,
+.sb-sidenav-dark .sb-sidenav-menu .nav-link:active {
+    color: white; 
+    font-weight: 600;
+}
+
+
+.sb-sidenav-dark .sb-sidenav-menu .sb-nav-link-icon{
+    color: rgba(255, 255, 255, 0.25); /*각 메뉴의 아이콘은 글자보다 좀 어둡게*/
+}
+
+
+
+
 .sb-sidenav-dark .sb-sidenav-footer{
-    background-color: #343a40;
+    background-color: #343a40; /*로그인 중 부분*/
+}
+
+/*simple = datatables 영역*/
+.datatable-input,
+.datatable-selector{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* text-transform: uppercase; */
+    color: #212529;
+    background-color: #f9f9f9;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.datatable-input:focus,
+.datatable-selector:focus{
+    color: #212529;
+    background-color: white;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.datatable-container{
+    font-size: 0.875rem;
+}
+
+.datatable-table{
+    border-collapse: collapse;
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-bg: transparent; /*투명하게*/
+    --bs-table-border-color: var(--bs-border-color); /*테두리 생성*/
+    border-color: var(--bs-table-border-color);
+    
 }
