@@ -69,7 +69,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 <br>
 
 ## 6일차
-- 프론트엔드 학습
+- 프론트엔드 실습
     - Bootstrap Album example 클로닝 마무리
     - 핀터레스트 스타일 웹 페이지 클로닝
 
@@ -83,7 +83,7 @@ Java 개발자 과정 프론트엔드 리포지토리
 <br>
 
 ## 7일차
-- 프론트엔드 학습
+- 프론트엔드 실습
     - 핀터레스트 스타일 웹 페이지 클로닝 마무리
         - Bootstrap 5.3.0
         - jQuery 3.6.4
@@ -113,7 +113,7 @@ Parallax Scrolling Web
 <br>
 
 ## 8일차
-- 프론트엔드 학습
+- 프론트엔드 실습
     - Single Page Template
     - SB Admin Page
 
@@ -127,7 +127,7 @@ Grayscale Single Page Template
 <br>
 
 ## 9일차
-- 프론트엔드 학습
+- 프론트엔드 실습
     - SB Admin Page
         - Bootstrap
         - Chart.js
@@ -137,3 +137,14 @@ Grayscale Single Page Template
 SB Admin Page 중간단계
 
 <img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio4.png" width="700" />
+
+## 10일차
+- 프론트엔드 실습
+    - SB Admin Page 마무리
+
+## 11일차
+- 프론트엔드 실습
+
+
+## 12일차
+- 프론트엔드 실습
