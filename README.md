@@ -138,6 +138,9 @@ SB Admin Page 중간단계
 
 <img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio4.png" width="700" />
 
+<br>
+<br>
+
 ## 10일차
 - 프론트엔드 실습
     - SB Admin Page 마무리
