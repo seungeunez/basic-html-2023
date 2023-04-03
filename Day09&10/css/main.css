@@ -333,3 +333,20 @@ p{
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
+
+/*에러 페이지*/
+#layoutError{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#layoutError #layoutError_content{
+    min-width: 0;
+    flex-grow: 1; /*컨텐트 나머지 영역을 제일 밑으로 */
+}
+
+#layoutError #layoutError_footer{
+    min-width: 0;
+    
+}
