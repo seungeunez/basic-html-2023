@@ -155,6 +155,12 @@ SB Admin Page 마무리
 
 ## 11일차
 - 프론트엔드 실습
+    - HTML+CSS+JS 책 참고
+
+Dream Jeju Page
+<img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio5.png" width="700" />
+
+
 
 
 ## 12일차
