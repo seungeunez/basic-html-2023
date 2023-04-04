@@ -144,10 +144,10 @@ Grayscale Single Page Template
 <br>
 
 SB Admin Page
+
 <img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio4.png" width="700"/>
 
 <img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio4_2.png" width="400">
-
 <img src="https://github.com/seungeunez/basic-html-2023/blob/main/image/portfolio4_3.png" width="400">
 
 <br>
