@@ -1,0 +1,15 @@
+
+
+ul{
+    list-style: none; 
+    
+}
+
+#menu > li {
+    float: left;
+    
+}
+
+#menu > li > a {
+    display: block;
+}
