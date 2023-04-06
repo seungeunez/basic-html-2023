@@ -14,12 +14,16 @@
     <style>
 
         *{
-            padding: 0;
-            margin: 0;
-            border: 0;
             font-family: 'NanumGothic', 'Malgun Gothic', sans-serif;
         }
-        
+
+        body{
+            background-color: rgb(240, 231, 255);
+        }
+
+        #wrap {
+            width: 100%;
+        }
 
         /*헤더영역*/
         header{
@@ -50,23 +54,22 @@
             color: black;
         }
 
+        a:active{
+            text-decoration: underline;
+            color: rgb(39, 132, 255);
+        }
         a:hover{
             text-decoration: underline;
             color: rgb(39, 132, 255);
         }
 
-        a:focus{
-            text-decoration: underline;
-            color: rgb(39, 132, 255);
-        }
+        
 
         /*container 영역*/
-
         .container-fluid .article{
             color: white;
             background-color: rgb(51, 51, 51);
         }
-
 
         .container-fluid .aside{
             background-color: gray;
@@ -115,11 +118,14 @@
 
 </head>
 <body>
-    <div class="box border border-0 m-5">
+    <div id="wrap" class="border border-0 px-5 pe-5 position-absolute top-50 start-50 translate-middle">
+
+        <!--header 영역-->
         <header class="pt-5 px-4 pb-2">
             <h1>한글 Page</h1>
         </header>
 
+        <!--nav 영역-->
         <nav class="nav nav-fill">
             <ul class="px-4 list-unstyled pt-3">
                 <li><a id="home" href="#">Home</a></li>
@@ -129,10 +135,11 @@
             </ul>
         </nav>
 
+        <!--container 영역-->
         <div class="container-fluid">
             <div class="row">
-                <div class="article col-9 addition border border-0 pt-4 px-4" > <!--pt-4 px-4-->
-                    <h5 class="pt-3">섹션1</h5> <!--class="pt-3"-->
+                <div class="article col-9 addition border border-0 pt-4 px-4" >
+                    <h5 class="pt-3">섹션1</h5> 
                     <p class="mb-1">섹션내용입니다.</p>
                 </div>
                 <div class="aside col-3 addition border border-0 pt-4">
@@ -141,11 +148,12 @@
             </div>
         </div>
 
+        <!--footer 영역-->
         <footer class="footer small p-3 px-2">
-            <div>&copy; 2023. 탁승은. inc reserved. </div>
+            <div>&copy; 2023. 탁승은. inc reserved.</div>
         </footer>
+
     </div>
 
-    
 </body>
 </html>
