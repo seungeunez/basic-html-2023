@@ -1,0 +1,816 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -19,
+    "scrollLeft": -469,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "Oracle",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "customer",
+        "comment": "고객",
+        "columns": [
+          {
+            "name": "customerid",
+            "comment": "고객 아이디",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.4697265625,
+              "widthComment": 71.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "f7d0f8f8-7026-4f39-a23b-cd9983e0d3a9"
+          },
+          {
+            "name": "customerpw",
+            "comment": "고객 비밀번호",
+            "dataType": "VARCHAR2(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.82373046875,
+              "widthComment": 84.5703125,
+              "widthDataType": 96.453125,
+              "widthDefault": 60
+            },
+            "id": "a7bb8604-408a-4701-8b1d-6c89f6bc1869"
+          },
+          {
+            "name": "customername",
+            "comment": "고객 이름",
+            "dataType": "VARCHAR2(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 89.08984375,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "53e3acaa-2363-4b9e-9826-d095276899c1"
+          },
+          {
+            "name": "customerphone",
+            "comment": "고객 전화번호",
+            "dataType": "VARCHAR2(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 94.03466796875,
+              "widthComment": 84.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "cc664e63-6a08-46d2-8bd3-1ddfc69e6ada"
+          },
+          {
+            "name": "customeraddress",
+            "comment": "고객 주소",
+            "dataType": "VARCHAR2(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.48681640625,
+              "widthComment": 60,
+              "widthDataType": 96.453125,
+              "widthDefault": 60
+            },
+            "id": "b262e39d-c2ea-4788-842f-5376aabdf72b"
+          },
+          {
+            "name": "customerbirth",
+            "comment": "고객 생년월일",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 84.4560546875,
+              "widthComment": 84.5703125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1250d5ef-2103-4300-9f83-6b515ecb7803"
+          },
+          {
+            "name": "regdate",
+            "comment": "등록일",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 71.93212890625,
+              "widthDefault": 134.31689453125
+            },
+            "id": "aa36cdb9-4ae1-4cc2-bffd-d318c0921ac6"
+          },
+          {
+            "name": "grade",
+            "comment": "고객 등급(0, 1, 2)",
+            "dataType": "NUMBER",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 102.80078125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "26dbc259-0394-4221-a448-e86c9d5c87e9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 42.6111,
+          "top": 463.8882,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#F44336"
+        },
+        "visible": true,
+        "id": "27340738-b7a0-4e99-91f6-7b266e9013d3"
+      },
+      {
+        "name": "reservation",
+        "comment": "예약",
+        "columns": [
+          {
+            "name": "rvno",
+            "comment": "예약 번호(시퀀스)",
+            "dataType": "NUMBER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 105.4921875,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2c473ba7-4937-44b4-99a8-c423e5ea1bd2"
+          },
+          {
+            "name": "rvdate",
+            "comment": "예약 날짜, 시간",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 91.984375,
+              "widthDataType": 71.93212890625,
+              "widthDefault": 134.31689453125
+            },
+            "id": "cb11ba8a-913f-4f7d-b42a-5fff266e4d6c"
+          },
+          {
+            "name": "customerid",
+            "comment": "고객 아이디",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 67.4697265625,
+              "widthComment": 71.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "c97631fd-ef0a-4302-a2de-c66a292ae5ef"
+          },
+          {
+            "name": "wid",
+            "comment": "세탁 업체 아이디",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 102.140625,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "fd959726-ff8e-4d43-b83d-baa6ef275cf4"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 718.1379,
+          "top": 505.9158,
+          "zIndex": 2,
+          "widthName": 66.94287109375,
+          "widthComment": 60,
+          "color": "#2196F3"
+        },
+        "visible": true,
+        "id": "46d4fb82-59bb-48b7-89c9-ac268a7c47ee"
+      },
+      {
+        "name": "washing",
+        "comment": "세탁업체",
+        "columns": [
+          {
+            "name": "wid",
+            "comment": "세탁 업체 아이디",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 102.140625,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "f2ccfc46-0e34-4645-941f-28597f969f58"
+          },
+          {
+            "name": "wpw",
+            "comment": "세탁 업체 비밀번호",
+            "dataType": "VARCHAR2(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 115.140625,
+              "widthDataType": 96.453125,
+              "widthDefault": 60
+            },
+            "id": "fd9345e0-d1fa-4605-a9ea-57e450262625"
+          },
+          {
+            "name": "wname",
+            "comment": "세탁 업체명(중복 X)",
+            "dataType": "VARCHAR2(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 117.87646484375,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "59346edb-05d6-47fa-beeb-19eddb00bdc5"
+          },
+          {
+            "name": "waddress",
+            "comment": "세탁 업체 주소",
+            "dataType": "VARCHAR2(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 89.140625,
+              "widthDataType": 96.453125,
+              "widthDefault": 60
+            },
+            "id": "8c9821e2-97c5-441d-b193-c7c66394ae92"
+          },
+          {
+            "name": "wphone",
+            "comment": "세탁 업체 전화번호",
+            "dataType": "VARCHAR2(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 115.140625,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "2851489c-a8a2-4601-bc1c-5401e92d9a17"
+          },
+          {
+            "name": "ceo",
+            "comment": "대표자명",
+            "dataType": "VARCHAR2(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "0b5398e6-bdcb-4d17-ae40-d843c5929f91"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1361.4715,
+          "top": 798.9716,
+          "zIndex": 9,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#4CAF50"
+        },
+        "visible": true,
+        "id": "055c9cb7-9bb5-43e3-8c17-6b5315083c5a"
+      },
+      {
+        "name": "manager",
+        "comment": "관리자",
+        "columns": [
+          {
+            "name": "mid",
+            "comment": "관리자 아이디",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 84.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "04dc749b-4d73-4fce-8299-2440cd473024"
+          },
+          {
+            "name": "mpw",
+            "comment": "관리자 비밀번호",
+            "dataType": "VARCHAR2(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 97.5703125,
+              "widthDataType": 96.453125,
+              "widthDefault": 60
+            },
+            "id": "bdd0b656-39ff-445a-b673-f14fd0c1a8c1"
+          },
+          {
+            "name": "mname",
+            "comment": "관리자 이름",
+            "dataType": "VARCHAR2(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 71.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "aa9446c6-5fc1-4a5d-886a-ee85390bb79e"
+          },
+          {
+            "name": "mphone",
+            "comment": "사무실 전화번호",
+            "dataType": "VARCHAR2(15)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 97.5703125,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "41f71d6f-0929-4a31-a606-07aef3e50567"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 746.4437,
+          "top": 219.2207,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#FFEB3B"
+        },
+        "visible": true,
+        "id": "e8883660-a359-43ed-afcb-7cd8fead9280"
+      },
+      {
+        "name": "machine",
+        "comment": "보유 기기",
+        "columns": [
+          {
+            "name": "wid",
+            "comment": "세탁 업체 아이디",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 102.140625,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "80048f70-7941-4bbb-8469-7329320c2668"
+          },
+          {
+            "name": "one",
+            "comment": "일체형",
+            "dataType": "NUMBER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cea22f63-2ea1-439e-936f-0a072825c468"
+          },
+          {
+            "name": "water",
+            "comment": "세탁기",
+            "dataType": "NUMBER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6c82fadc-b5ea-44ac-a75e-240a0a91c310"
+          },
+          {
+            "name": "dry",
+            "comment": "건조기",
+            "dataType": "NUMBER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "dfb24270-40d3-45f5-9deb-aa70d45e320e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1372.5565,
+          "top": 506.5822,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#9C27B0"
+        },
+        "visible": true,
+        "id": "2ad87375-84ad-4bf5-864a-8adcc00d5230"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "27340738-b7a0-4e99-91f6-7b266e9013d3",
+          "columnIds": [
+            "f7d0f8f8-7026-4f39-a23b-cd9983e0d3a9"
+          ],
+          "x": 584.6687171875,
+          "y": 580.3882,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "46d4fb82-59bb-48b7-89c9-ac268a7c47ee",
+          "columnIds": [
+            "c97631fd-ef0a-4302-a2de-c66a292ae5ef"
+          ],
+          "x": 718.1379,
+          "y": 581.4158,
+          "direction": "left"
+        },
+        "constraintName": "fk_customer_to_reservation",
+        "visible": true,
+        "id": "883880a2-706d-4bfa-8da8-151cb95180dd"
+      },
+      {
+        "identification": true,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "055c9cb7-9bb5-43e3-8c17-6b5315083c5a",
+          "columnIds": [
+            "f2ccfc46-0e34-4645-941f-28597f969f58"
+          ],
+          "x": 1582.136294921875,
+          "y": 798.9716,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "2ad87375-84ad-4bf5-864a-8adcc00d5230",
+          "columnIds": [
+            "80048f70-7941-4bbb-8469-7329320c2668"
+          ],
+          "x": 1581.773296875,
+          "y": 657.5822000000001,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_washing_to_machine",
+        "visible": true,
+        "id": "6c4a0c84-5210-4b66-884e-405df47d533f"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "2ad87375-84ad-4bf5-864a-8adcc00d5230",
+          "columnIds": [
+            "80048f70-7941-4bbb-8469-7329320c2668"
+          ],
+          "x": 1372.5565,
+          "y": 582.0822000000001,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "46d4fb82-59bb-48b7-89c9-ac268a7c47ee",
+          "columnIds": [
+            "fd959726-ff8e-4d43-b83d-baa6ef275cf4"
+          ],
+          "x": 1221.70967734375,
+          "y": 581.4158,
+          "direction": "right"
+        },
+        "constraintName": "fk_machine_to_reservation",
+        "visible": true,
+        "id": "d761d0dd-cd24-4c9c-a607-28331065e698"
+      }
+    ]
+  }
+}
